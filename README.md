@@ -6,3 +6,4 @@ Will be updated with more detailed descriptions of the opcodes
 * Clone this repo
 * `cd` into its directory
 * `cat <bytecode> | python3 decomp.py` to print helpful descriptions to stdout
+The bytecode can be generated with `solcjs contract.sol --bin` or similar.
