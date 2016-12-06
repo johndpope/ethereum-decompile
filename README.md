@@ -1,6 +1,7 @@
 # ethereum-decompile
 Decompiles ethereum bytecode into (marginally) more readable assembly
 
+Will be updated with more detailed descriptions of the opcodes
 ## How to use:
 * Clone this repo
 * `cd` into its directory

@@ -14,6 +14,8 @@
 #
 #    You should have received a copy of the GNU General Public License
 #    along with SmartWatch.  If not, see <http://www.gnu.org/licenses/>.
+#
+#    Copyright 2016 David Young <github@thedavidyoung.co.uk>
 
 import sys
 import opcodes

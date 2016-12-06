@@ -16,6 +16,9 @@
 #
 #    You should have received a copy of the GNU General Public License
 #    along with SmartWatch.  If not, see <http://www.gnu.org/licenses/>.
+#
+#    Copyright 2016 David Young <github@thedavidyoung.co.uk>
+#    Opcodes from the Ethereum yellow paper <http://paper.gavwood.com/>
 
 opcodes={
 #0s: Stop and Arithmetic Operations
