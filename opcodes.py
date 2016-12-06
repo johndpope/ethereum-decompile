@@ -60,7 +60,7 @@ opcodes={
 0x31:	["BALANCE","Get balance of the given account"],
 0x32:	["ORIGIN","Get execution origination address"],
 0x33:	["CALLER","Get caller address. This is the address of the account that is directly responsible for this execution"],
-0x34:	["CALLVALUE","Get deposited value by the instruction/transaction responsible for this execution"],
+0x34:	["CALLVALUE","Get deposited value by the instruction/transaction responsible for this execution (Ether passed to transaction)"],
 0x35:	["CALLDATALOAD","Get input data of current environment"],
 0x36:	["CALLDATASIZE","Get size of input data in current environment"],
 0x37:	["CALLDATACOPY","Copy input data in current environment to memory This pertains to the input data passed with the message call instruction or transaction"],
