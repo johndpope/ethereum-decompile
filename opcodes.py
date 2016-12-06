@@ -1,6 +1,21 @@
 #!/usr/bin/python3
 
-# sed 's/\t"/\t["/' < opcodes.py | sed 's/",#[[:space:]]*/","/' | sed 's/\([a-z]\)$/\1"],/'
+#!/usr/bin/python3
+
+#    This file is part of ethereum-decompile.
+#
+#    ethereum-decompile is free software: you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation, either version 3 of the License, or
+#    (at your option) any later version.
+#
+#    ethereum-decompile is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+#
+#    You should have received a copy of the GNU General Public License
+#    along with SmartWatch.  If not, see <http://www.gnu.org/licenses/>.
 
 opcodes={
 #0s: Stop and Arithmetic Operations
