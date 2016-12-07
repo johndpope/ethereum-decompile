@@ -35,11 +35,11 @@ for x in bytes():
 		break
 	code=int(x.decode(),16)
 	# if we have a push instruction, we must read bytes from the byte array for its argument
-	arg=''.join(["0x%s"%fetchByte().decode()for i in range(0x60,code+1)])if(0x60<=code<=0x7f)else''
+	arg=' '.join(["0x%s"%fetchByte().decode()for i in range(0x60,code+1)])if(0x60<=code<=0x7f)else'\t'
 	print(
 		hex(code),
 		opcodes.opcodes[code][0],
-		"\t|\t",
+		"\t| ",
 		arg,
 		"\t;\t",
 		opcodes.opcodes[code][1])
