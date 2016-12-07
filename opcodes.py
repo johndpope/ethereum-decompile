@@ -15,8 +15,11 @@
 #    You should have received a copy of the GNU General Public License
 #    along with ethereum-decompile.  If not, see <http://www.gnu.org/licenses/>.
 #
-#    Copyright 2016 David Young <github@thedavidyoung.co.uk>
+#    Copyright 2016 David Young <git@thedavidyoung.co.uk>
 #    Opcodes from the Ethereum yellow paper <http://paper.gavwood.com/>
+
+# Dict format is:
+# OPCODE: ["NAME","DESCRIPTION"]
 
 opcodes={
 #0s: Stop and Arithmetic Operations
@@ -81,7 +84,7 @@ opcodes={
 
 0x50:	["POP","Remove item from stack"],
 0x51:	["MLOAD","Load word from memory"],
-0x52:	["MSTORE","Save word to memory"],
+0x52:	["MSTORE","Save word stack[1] to memory location stack[0]..(stack[0]+31)"],
 0x53:	["MSTORE8","Save byte to memory"],
 0x54:	["SLOAD","Load word from storage"],
 0x55:	["SSTORE","Save word to storage"],

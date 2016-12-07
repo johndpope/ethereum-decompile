@@ -15,7 +15,7 @@
 #    You should have received a copy of the GNU General Public License
 #    along with ethereum-decompile.  If not, see <http://www.gnu.org/licenses/>.
 #
-#    Copyright 2016 David Young <github@thedavidyoung.co.uk>
+#    Copyright 2016 David Young <git@thedavidyoung.co.uk>
 
 import sys
 import opcodes
