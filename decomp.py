@@ -40,7 +40,7 @@ for x in bytes():
 	arg=' '.join(["0x%s"%fetchByte().decode()for i in range(0x60,code+1)])if(0x60<=code<=0x7f)else'\t'
 	print(
 		hex(counter),
-		'|',
+		')',
 		hex(code),
 		opcodes.opcodes[code][0],
 		"\t| ",
