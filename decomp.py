@@ -49,5 +49,5 @@ for x in bytes():
 			"\t;\t",
 			opcodes.opcodes[code][1])
 	except(KeyError):
-		raise Exception("Invalid opcode %s"%hex(int(x.decode(),16)))
+                print("invalid opcode %s"%hex(int(x.decode(),16)))
 	counter+=1+push_size
