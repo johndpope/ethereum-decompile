@@ -38,13 +38,16 @@ for x in bytes():
 	# if we have a push instruction, we must read bytes from the byte array for its argument
 	push_size=code+1-0x60 if(0x60<=code<=0x7f)else 0
 	arg=' '.join(["0x%s"%fetchByte().decode()for i in range(0x60,code+1)])if(0x60<=code<=0x7f)else'\t'
-	print(
-		hex(counter),
-		')',
-		hex(code),
-		opcodes.opcodes[code][0],
-		"\t| ",
-		arg,
-		"\t;\t",
-		opcodes.opcodes[code][1])
+	try:
+		print(
+			hex(counter),
+			')',
+			hex(code),
+			opcodes.opcodes[code][0],
+			"\t| ",
+			arg,
+			"\t;\t",
+			opcodes.opcodes[code][1])
+	except(KeyError):
+		raise Exception("Invalid opcode %s"%hex(int(x.decode(),16)))
 	counter+=1+push_size
